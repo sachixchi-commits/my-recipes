@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Recipe</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fcfcfc; }
+        .recipe-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #e67e22; border-bottom: 2px solid #f39c12; padding-bottom: 10px; }
+        .meta { display: flex; gap: 20px; color: #7f8c8d; font-style: italic; margin-bottom: 20px; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .print-btn { background: #e67e22; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .print-btn:hover { background: #d35400; }
+        @media print { .print-btn { display: none; } }
+    </style>
+</head>
+<body>
+
+<div class="recipe-card">
+    <h1>Delicious Homemade Recipe</h1>
+    <div class="meta">
+        <span>Prep: 15 mins</span> | <span>Cook: 30 mins</span> | <span>Serves: 4</span>
+    </div>
+    
+    <h3>Ingredients</h3>
+    <ul>
+        <li>Ingredient 1 - 1 unit</li>
+        <li>Ingredient 2 - 2 tbsp</li>
+        <li>Secret Spice - A pinch</li>
+    </ul>
+
+    <h3>Instructions</h3>
+    <ol>
+        <li>Preheat your oven and prepare your workspace.</li>
+        <li>Mix the dry ingredients in a large bowl.</li>
+        <li>Combine everything and bake until golden brown.</li>
+    </ol>
+
+    <button class="print-btn" onclick="window.print()">Print This Recipe</button>
+</div>
+
+</body>
+</html>
